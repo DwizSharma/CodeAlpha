@@ -1,12 +1,30 @@
-# CodeAlpha Beginner Projects
+# CodeAlpha Java Projects
 
-Four small, standalone browser projects built with HTML, CSS, and JavaScript. No installation or server is needed: open each `index.html` in a browser.
+Four beginner-friendly Java console applications. They use only the Java standard library and need no external packages. Java 17 or newer is recommended.
 
-## Projects
+## Run a project
 
-1. [Student Grade Tracker](Student-Grade-Tracker/) — add subjects and scores, then view the average and letter grade.
-2. [Stock Trading Platform](Stock-Trading-Platform/) — practice buying and selling shares with a simulated balance and sample prices.
-3. [AI Chatbot](AI-Chatbot/) — a simple rule-based chatbot demo that replies to common greetings and questions. It does not call an AI service.
-4. [Hotel Reservation System](Hotel-Reservation-System/) — enter guest and stay details and see a reservation summary.
+Open a terminal in the project folder and compile and run its main class:
 
-These are beginner demos. The stock prices and trading balance are simulated; the hotel form does not make a real booking.
+```bash
+javac StudentGradeTracker.java
+java StudentGradeTracker
+```
+
+For each project, use the matching source and run class name below:
+
+| Project | Source file | Run command |
+| --- | --- | --- |
+| Student Grade Tracker | `StudentGradeTracker.java` | `java StudentGradeTracker` |
+| Stock Trading Platform | `StockTradingPlatform.java` | `java StockTradingPlatform` |
+| AI Chatbot | `AIChatbot.java` | `java AIChatbot` |
+| Hotel Reservation System | `HotelReservationSystem.java` | `java HotelReservationSystem` |
+
+Compile the matching source first with `javac <SourceFile.java>`. On Windows, the same commands work in Command Prompt or PowerShell if Java is on PATH.
+
+## Project notes
+
+- **Student Grade Tracker:** add, list, and remove grades; see average, letter grade, and highest and lowest subjects.
+- **Stock Trading Platform:** paper trading with sample prices, a simulated cash balance, and a portfolio. No real trades are made.
+- **AI Chatbot:** offline, rule-based replies for greetings, date, time, jokes, and a few common prompts. It does not connect to an AI service.
+- **Hotel Reservation System:** create, list, and cancel sample bookings with date validation and estimated room costs. It does not contact a real hotel, and reservations exist only until the program exits.
